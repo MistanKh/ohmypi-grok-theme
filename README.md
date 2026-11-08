@@ -8,6 +8,10 @@ versions: near-black chrome, warm text, one desaturated steel accent.
 
 Both are colors-only: no shaders, wallpapers, symbols, or terminal escape hooks.
 
+Published as [`grok-omp-theme`](https://pi.dev/packages/grok-omp-theme) for package
+discovery and Pi compatibility. OMP 18.18 loads themes from the agent themes
+directory, not from plugin packages, so use the file steps below for OMP.
+
 ## Install
 
 ```sh
