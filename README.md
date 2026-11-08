@@ -1,18 +1,21 @@
-# Grok Theme for Oh My Pi
+# Grok Themes for Oh My Pi
 
-Two omp themes built from the same graphite/ivory palette as the Zed and Pebrel
-versions: near-black chrome, warm text, one desaturated steel accent.
+Two themes for [oh-my-pi](https://github.com/can1357/oh-my-pi) (`omp`) built from
+the same graphite and ivory palette as the Zed and Pebrel versions.
 
-- **grok-obsidian** — dark. `statusLineBg` sits at `#0C0C0C`; terminal canvas at `#101010`.
-- **grok-parchment** — light. Neutral paper chrome with the same muted syntax palette.
+- **grok-obsidian** — dark. Status line and chrome at `#0C0C0C`, terminal canvas
+  at `#101010`.
+- **grok-parchment** — light. Neutral paper chrome with the same muted syntax
+  palette.
 
-Both are colors-only: no shaders, wallpapers, symbols, or terminal escape hooks.
+Both themes are colors-only. They define the complete omp theme token set,
+including the optional `assistantMessageText` token; they do not change symbols,
+spinners, terminal escape behavior, or wallpapers.
 
-Published as [`grok-omp-theme`](https://pi.dev/packages/grok-omp-theme) for package
-discovery and Pi compatibility. OMP 18.18 loads themes from the agent themes
-directory, not from plugin packages, so use the file steps below for OMP.
+## Installation (omp)
 
-## Install
+OMP reads themes from the active agent directory. Copy the JSON files and select
+them in the dark and light slots:
 
 ```sh
 mkdir -p ~/.omp/agent/themes
@@ -22,12 +25,24 @@ omp config set theme.dark grok-obsidian
 omp config set theme.light grok-parchment
 ```
 
-Restart omp, or open `/settings` → **Appearance** and pick the theme in the dark
-and light slots. omp chooses the slot from the terminal background.
+Restart omp, or open `/settings` → **Appearance** and choose the themes. omp
+selects the slot from the terminal background.
 
 For a named profile, install into
-`~/.omp/profiles/<name>/agent/themes/` instead. If `PI_CODING_AGENT_DIR` is set
-for the default profile, use `$PI_CODING_AGENT_DIR/themes/`.
+`~/.omp/profiles/<name>/agent/themes/`. If `PI_CODING_AGENT_DIR` is set for the
+default profile, use `$PI_CODING_AGENT_DIR/themes/`.
+
+## Package Listing
+
+The themes are also published as the Pi package
+[`grok-omp-theme`](https://pi.dev/packages/grok-omp-theme) for discovery and for
+Pi-compatible hosts. OMP 18.18 loads themes from the agent themes directory, not
+from installed plugin packages, so the file copy above is the supported OMP
+installation path. The package is installed from npm with:
+
+```sh
+omp install npm:grok-omp-theme
+```
 
 ## Palette
 
@@ -43,19 +58,34 @@ for the default profile, use `$PI_CODING_AGENT_DIR/themes/`.
 | Type | `#9DBFB6` | `#2F5F5A` |
 | Number | `#C7A9A0` | `#8A5A52` |
 
-The dark theme keeps tool cards and the status line darker than assistant text;
-the light theme mirrors the same contrast steps rather than inverting them.
+The dark theme keeps tool cards and the status line darker than assistant text.
+The light theme mirrors the same contrast steps rather than inverting them.
 
 ## Verification
 
 - All 66 required color tokens are present, plus `assistantMessageText`.
-- `omp gallery --width 100` renders the full tool/composer/status-line catalog
-  with both variants; ANSI output was checked for the expected palette values.
-- Tested with omp `18.18.1` on Windows 11 (x64).
+- `omp gallery --width 100` renders the full tool, composer, and status-line
+  catalog with both variants; ANSI output was checked for the expected palette
+  values and no fallback palette.
+- Tested with omp 18.18.1 and 18.18.2 on Windows 11 (x64).
 
-`assistantMessageText` and `text` are both set: omp uses the former for assistant
-prose and the latter for explicit editor/dialog text.
+## Repository Layout
+
+```text
+themes/grok-obsidian.json
+themes/grok-parchment.json
+package.json            npm / Pi package manifest
+README.md
+LICENSE
+```
+
+## Status and Links
+
+- Source: https://github.com/MistanKh/ohmypi-grok-theme
+- npm package: https://pi.dev/packages/grok-omp-theme
+- Community post: https://github.com/can1357/oh-my-pi/discussions/18542
+- Release: https://github.com/MistanKh/ohmypi-grok-theme/releases/tag/v1.0.0
 
 ## License
 
-MIT. Unofficial theme, not affiliated with xAI.
+MIT. Independent and unofficial; not affiliated with xAI.
