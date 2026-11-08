@@ -1,0 +1,34 @@
+{
+  "name": "grok-omp-theme",
+  "version": "1.0.0",
+  "description": "Grok Obsidian and Grok Parchment themes for oh-my-pi (omp) and the Pi coding agent",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MistanKh/ohmypi-grok-theme.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "pi-theme",
+    "oh-my-pi",
+    "omp",
+    "omp-theme",
+    "grok",
+    "terminal-theme",
+    "tui-theme",
+    "dark-theme",
+    "light-theme"
+  ],
+  "files": [
+    "themes/",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "themes": [
+      "./themes/*.json"
+    ]
+  }
+}
