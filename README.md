@@ -49,7 +49,7 @@ omp install npm:grok-omp-theme
 | Role | Obsidian | Parchment |
 | --- | --- | --- |
 | Chrome / status line | `#0C0C0C` | `#EFEEEB` |
-| Terminal canvas | `#101010` | `#FBFBF9` |
+| Terminal canvas | `#141414` | `#FBFBF9` |
 | UI text / muted | `#E6E4DF` / `#9A9892` | `#242422` / `#686866` |
 | Assistant prose | `#C9C3B7` | `#242422` |
 | Accent, model | `#A9BCCB` | `#4C6478` |
