@@ -50,7 +50,8 @@ omp install npm:grok-omp-theme
 | --- | --- | --- |
 | Chrome / status line | `#0C0C0C` | `#EFEEEB` |
 | Terminal canvas | `#101010` | `#FBFBF9` |
-| Text / muted | `#E6E4DF` / `#9A9892` | `#242422` / `#686866` |
+| UI text / muted | `#E6E4DF` / `#9A9892` | `#242422` / `#686866` |
+| Assistant prose | `#C9C3B7` | `#242422` |
 | Accent, model | `#A9BCCB` | `#4C6478` |
 | Keyword | `#A6B8C6` | `#4C6478` |
 | Function | `#D4C8B4` | `#4E6A5A` |
@@ -59,7 +60,9 @@ omp install npm:grok-omp-theme
 | Number | `#C7A9A0` | `#8A5A52` |
 
 The dark theme keeps tool cards and the status line darker than assistant text.
-The light theme mirrors the same contrast steps rather than inverting them.
+Assistant prose, user/custom message text, and the terminal foreground use the
+softened `#C9C3B7`; UI chrome and dialogs keep the brighter `#E6E4DF`. The light
+theme mirrors the same contrast steps rather than inverting them.
 
 ## Verification
 

@@ -15,16 +15,16 @@
     "thinkingText": "#9A9892",
     "selectedBg": "#262B30",
     "userMessageBg": "#1C1C1C",
-    "userMessageText": "#E6E4DF",
+    "userMessageText": "#C9C3B7",
     "customMessageBg": "#181818",
-    "customMessageText": "#E6E4DF",
+    "customMessageText": "#C9C3B7",
     "customMessageLabel": "#A9BCCB",
     "toolPendingBg": "#171717",
     "toolSuccessBg": "#161B17",
     "toolErrorBg": "#1D1514",
     "toolTitle": "#D4C8B4",
     "toolOutput": "#9A9892",
-    "assistantMessageText": "#E6E4DF",
+    "assistantMessageText": "#C9C3B7",
     "mdHeading": "#D4C8B4",
     "mdLink": "#A9BCCB",
     "mdLinkUrl": "#7C7B76",
@@ -77,7 +77,7 @@
   },
   "terminal": {
     "background": "#101010",
-    "foreground": "#E6E4DF",
+    "foreground": "#C9C3B7",
     "chrome": "#0C0C0C",
     "widget": "#131313",
     "ansi": [
@@ -88,7 +88,7 @@
       "#8FA9C0",
       "#B49BB0",
       "#8AAFA9",
-      "#E6E4DF",
+      "#C9C3B7",
       "#3A3A3A",
       "#D6A09A",
       "#AEC9B1",
@@ -96,7 +96,7 @@
       "#AAC2D6",
       "#CBB2C7",
       "#A5C9C2",
-      "#FFFFFF"
+      "#DDD7CC"
     ]
   }
 }
